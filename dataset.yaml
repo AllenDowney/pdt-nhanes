@@ -1,0 +1,32 @@
+# The dataset, its terms and its releases (STANDARD.md §2.1, §8).
+# Schema: PublicDataToolkit/schema/dataset.schema.json. Edited by hand.
+standard_version: "0.1"
+id: nhanes
+title: "National Health and Nutrition Examination Survey (NHANES)"
+publisher:
+  name: "National Center for Health Statistics (NCHS), CDC"
+  url: "https://www.cdc.gov/nchs/"
+url: "https://wwwn.cdc.gov/nchs/nhanes/"
+description: "NCHS\u0027s survey of the health and nutrition of the US civilian noninstitutionalized population, combining interviews with physical examinations and laboratory tests at mobile examination centers. Released in two-year cycles of linked files."
+citation: "Centers for Disease Control and Prevention (CDC). National Center for Health Statistics (NCHS). National Health and Nutrition Examination Survey Data. Hyattsville, MD: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention."
+# Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
+# Quote what the terms pages say in `summary`, then have a person set each field
+# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
+# shipping anything that depends on it.
+terms:
+  url: "https://www.cdc.gov/nchs/policy/data-user-agreement.html"
+  summary: Not yet reviewed.
+  data: unknown
+  documentation: unknown
+  metadata: unknown
+  llm_processing: unknown
+dimensions:
+  wave:
+    label: "cycle"
+releases:
+  - id: "2021-2023"
+    label: "NHANES August 2021-August 2023"
+    status: current
+    sources: [nhanes-2021-2023-demo]
+    # A release with several data files lists `tables`, each with an id, label,
+    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.

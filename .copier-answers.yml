@@ -1,0 +1,25 @@
+# Changes here will be overwritten by Copier; do not edit by hand.
+_commit: v0.1.0
+_src_path: /home/downey/PublicDataToolkit
+citation: 'Centers for Disease Control and Prevention (CDC). National Center for Health
+    Statistics (NCHS). National Health and Nutrition Examination Survey Data. Hyattsville,
+    MD: U.S. Department of Health and Human Services, Centers for Disease Control
+    and Prevention.'
+dataset_id: nhanes
+dataset_url: https://wwwn.cdc.gov/nchs/nhanes/
+description: NCHS's survey of the health and nutrition of the US civilian noninstitutionalized
+    population, combining interviews with physical examinations and laboratory tests
+    at mobile examination centers. Released in two-year cycles of linked files.
+form_label: ''
+publisher_name: National Center for Health Statistics (NCHS), CDC
+publisher_url: https://www.cdc.gov/nchs/
+release_id: 2021-2023
+release_label: NHANES August 2021-August 2023
+source_format: sas-xport
+source_id: nhanes-2021-2023-demo
+source_kind: data
+source_url: https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt
+standard_version: '0.1'
+terms_url: https://www.cdc.gov/nchs/policy/data-user-agreement.html
+title: National Health and Nutrition Examination Survey (NHANES)
+wave_label: cycle
