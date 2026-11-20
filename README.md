@@ -2,7 +2,7 @@
 
 Metadata for the [National Health and Nutrition Examination Survey (NHANES)](https://wwwn.cdc.gov/nchs/nhanes/), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** three cycles (2015-2016, 2017-March 2020 pre-pandemic, August 2021-August 2023), each with four files taken whole and linked on SEQN: demographics, the PHQ-9 depression screener, body measures and glycohemoglobin. The terms aren't decided yet, so nothing here may ship.
+**Status:** three cycles (2015-2016, 2017-March 2020 pre-pandemic, August 2021-August 2023), each with four files taken whole and linked on SEQN: demographics, the PHQ-9 depression screener, body measures and glycohemoglobin. The terms are decided (everything ships), but nothing is published yet.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -12,7 +12,9 @@ NCHS's survey of the health and nutrition of the US civilian noninstitutionalize
 
 ## Terms of use
 
-The terms are at https://www.cdc.gov/nchs/policy/data-user-agreement.html. They haven't been reviewed yet, so nothing built from this repo may ship (STANDARD.md §8). Once a person has decided them, summarize them here; the decision is in [`dataset.yaml`](dataset.yaml).
+The terms are at https://www.cdc.gov/nchs/policy/data-user-agreement.html. Allen Downey reviewed the terms on 2026-11-20: the metadata, the documentation and the common-format data ship, with this notice:
+
+> Source: National Center for Health Statistics, National Health and Nutrition Examination Survey, public-use data files. Use is subject to the NCHS Data User Agreement (https://www.cdc.gov/nchs/policy/data-user-agreement.html): the data may be used only for statistical reporting and analysis, and users must not attempt to identify any person or link the data to identifiable data.
 
 ## How to get the data
 

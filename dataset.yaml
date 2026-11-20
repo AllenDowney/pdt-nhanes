@@ -11,10 +11,10 @@ url: "https://wwwn.cdc.gov/nchs/nhanes/"
 description: "NCHS\u0027s survey of the health and nutrition of the US civilian noninstitutionalized population, combining interviews with physical examinations and laboratory tests at mobile examination centers. Released in two-year cycles of linked files."
 citation: "Centers for Disease Control and Prevention (CDC). National Center for Health Statistics (NCHS). National Health and Nutrition Examination Survey Data. Hyattsville, MD: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention."
 # Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
-# (PublicDataToolkit Task 61), 2026-11-20; `unknown` until Allen decides.
+# (PublicDataToolkit Task 61), 2026-11-20; Allen Downey decided them on 2026-11-20.
 terms:
   url: https://www.cdc.gov/nchs/policy/data-user-agreement.html
-  summary: 'Not yet decided. What NCHS says (Data User Agreement, saved as nchs-data-user-agreement, dated September
+  summary: 'What NCHS says (Data User Agreement, saved as nchs-data-user-agreement, dated September
     17, 2024): "National Center for Health Statistics (NCHS) offers survey data files for public-use, with some
     restrictions." "These confidentiality laws state the data collected by NCHS may be used only for statistical
     reporting and analysis." Users will "Use the data in this dataset for statistical reporting and analysis only",
@@ -24,10 +24,13 @@ terms:
     you signify your agreement to comply with the above-stated statutorily based requirements." The agreement says
     nothing about redistributing the files, and NCHS posts them at wwwn.cdc.gov without registration. This is the
     agreement Allen decided for pdt-nhis and pdt-nsfg.'
-  data: unknown
-  documentation: unknown
-  metadata: unknown
-  llm_processing: unknown
+  data: ship
+  documentation: ship
+  metadata: ship
+  llm_processing: allowed
+  reviewed_by: Allen Downey
+  reviewed_on: '2026-11-20'
+  notice: 'Source: National Center for Health Statistics, National Health and Nutrition Examination Survey, public-use data files. Use is subject to the NCHS Data User Agreement (https://www.cdc.gov/nchs/policy/data-user-agreement.html): the data may be used only for statistical reporting and analysis, and users must not attempt to identify any person or link the data to identifiable data.'
 dimensions:
   wave:
     label: cycle
