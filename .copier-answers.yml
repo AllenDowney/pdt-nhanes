@@ -1,10 +1,11 @@
 # Changes here will be overwritten by Copier; do not edit by hand.
-_commit: v0.1.0
+_commit: v0.2.0
 _src_path: /home/downey/PublicDataToolkit
 citation: 'Centers for Disease Control and Prevention (CDC). National Center for Health
     Statistics (NCHS). National Health and Nutrition Examination Survey Data. Hyattsville,
     MD: U.S. Department of Health and Human Services, Centers for Disease Control
     and Prevention.'
+copyright_holder: Allen Downey
 dataset_id: nhanes
 dataset_url: https://wwwn.cdc.gov/nchs/nhanes/
 description: NCHS's survey of the health and nutrition of the US civilian noninstitutionalized
