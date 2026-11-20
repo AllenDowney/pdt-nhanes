@@ -1,0 +1,469 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "533a6f3387dee360e7b60bc446b3981870e8336fad799dcc9a14134a1677394a",
+ "dataset": "nhanes",
+ "max_tokens": 20000,
+ "shards": [
+  {
+   "kind": "table",
+   "title": "Release 2015-2016, table demo",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2015-2016/demo/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2015-2016",
+    "table": "demo"
+   },
+   "releases": [
+    "2015-2016"
+   ],
+   "n_in_scope": 47,
+   "rule_versions": {},
+   "notes": [],
+   "count": 47,
+   "files": [
+    {
+     "path": "shards/table/2015-2016-demo.jsonl",
+     "form": "jsonl",
+     "variables": 47,
+     "tokens": 13373
+    },
+    {
+     "path": "shards/table/2015-2016-demo.txt",
+     "form": "txt",
+     "variables": 47,
+     "tokens": 1814
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2015-2016, table dpq",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2015-2016/dpq/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2015-2016",
+    "table": "dpq"
+   },
+   "releases": [
+    "2015-2016"
+   ],
+   "n_in_scope": 11,
+   "rule_versions": {},
+   "notes": [],
+   "count": 11,
+   "files": [
+    {
+     "path": "shards/table/2015-2016-dpq.jsonl",
+     "form": "jsonl",
+     "variables": 11,
+     "tokens": 3623
+    },
+    {
+     "path": "shards/table/2015-2016-dpq.txt",
+     "form": "txt",
+     "variables": 11,
+     "tokens": 706
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2015-2016, table bmx",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2015-2016/bmx/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2015-2016",
+    "table": "bmx"
+   },
+   "releases": [
+    "2015-2016"
+   ],
+   "n_in_scope": 26,
+   "rule_versions": {},
+   "notes": [],
+   "count": 26,
+   "files": [
+    {
+     "path": "shards/table/2015-2016-bmx.jsonl",
+     "form": "jsonl",
+     "variables": 26,
+     "tokens": 5573
+    },
+    {
+     "path": "shards/table/2015-2016-bmx.txt",
+     "form": "txt",
+     "variables": 26,
+     "tokens": 747
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2015-2016, table ghb",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2015-2016/ghb/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2015-2016",
+    "table": "ghb"
+   },
+   "releases": [
+    "2015-2016"
+   ],
+   "n_in_scope": 2,
+   "rule_versions": {},
+   "notes": [],
+   "count": 2,
+   "files": [
+    {
+     "path": "shards/table/2015-2016-ghb.jsonl",
+     "form": "jsonl",
+     "variables": 2,
+     "tokens": 458
+    },
+    {
+     "path": "shards/table/2015-2016-ghb.txt",
+     "form": "txt",
+     "variables": 2,
+     "tokens": 165
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2017-2020, table demo",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2017-2020/demo/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2017-2020",
+    "table": "demo"
+   },
+   "releases": [
+    "2017-2020"
+   ],
+   "n_in_scope": 29,
+   "rule_versions": {},
+   "notes": [],
+   "count": 29,
+   "files": [
+    {
+     "path": "shards/table/2017-2020-demo.jsonl",
+     "form": "jsonl",
+     "variables": 29,
+     "tokens": 7227
+    },
+    {
+     "path": "shards/table/2017-2020-demo.txt",
+     "form": "txt",
+     "variables": 29,
+     "tokens": 1096
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2017-2020, table dpq",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2017-2020/dpq/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2017-2020",
+    "table": "dpq"
+   },
+   "releases": [
+    "2017-2020"
+   ],
+   "n_in_scope": 11,
+   "rule_versions": {},
+   "notes": [],
+   "count": 11,
+   "files": [
+    {
+     "path": "shards/table/2017-2020-dpq.jsonl",
+     "form": "jsonl",
+     "variables": 11,
+     "tokens": 3624
+    },
+    {
+     "path": "shards/table/2017-2020-dpq.txt",
+     "form": "txt",
+     "variables": 11,
+     "tokens": 706
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2017-2020, table bmx",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2017-2020/bmx/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2017-2020",
+    "table": "bmx"
+   },
+   "releases": [
+    "2017-2020"
+   ],
+   "n_in_scope": 22,
+   "rule_versions": {},
+   "notes": [],
+   "count": 22,
+   "files": [
+    {
+     "path": "shards/table/2017-2020-bmx.jsonl",
+     "form": "jsonl",
+     "variables": 22,
+     "tokens": 4673
+    },
+    {
+     "path": "shards/table/2017-2020-bmx.txt",
+     "form": "txt",
+     "variables": 22,
+     "tokens": 616
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2017-2020, table ghb",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2017-2020/ghb/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2017-2020",
+    "table": "ghb"
+   },
+   "releases": [
+    "2017-2020"
+   ],
+   "n_in_scope": 2,
+   "rule_versions": {},
+   "notes": [],
+   "count": 2,
+   "files": [
+    {
+     "path": "shards/table/2017-2020-ghb.jsonl",
+     "form": "jsonl",
+     "variables": 2,
+     "tokens": 459
+    },
+    {
+     "path": "shards/table/2017-2020-ghb.txt",
+     "form": "txt",
+     "variables": 2,
+     "tokens": 165
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2021-2023, table demo",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2021-2023/demo/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2021-2023",
+    "table": "demo"
+   },
+   "releases": [
+    "2021-2023"
+   ],
+   "n_in_scope": 27,
+   "rule_versions": {},
+   "notes": [],
+   "count": 27,
+   "files": [
+    {
+     "path": "shards/table/2021-2023-demo.jsonl",
+     "form": "jsonl",
+     "variables": 27,
+     "tokens": 6953
+    },
+    {
+     "path": "shards/table/2021-2023-demo.txt",
+     "form": "txt",
+     "variables": 27,
+     "tokens": 1047
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2021-2023, table dpq",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2021-2023/dpq/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2021-2023",
+    "table": "dpq"
+   },
+   "releases": [
+    "2021-2023"
+   ],
+   "n_in_scope": 11,
+   "rule_versions": {},
+   "notes": [],
+   "count": 11,
+   "files": [
+    {
+     "path": "shards/table/2021-2023-dpq.jsonl",
+     "form": "jsonl",
+     "variables": 11,
+     "tokens": 3624
+    },
+    {
+     "path": "shards/table/2021-2023-dpq.txt",
+     "form": "txt",
+     "variables": 11,
+     "tokens": 706
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2021-2023, table bmx",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2021-2023/bmx/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2021-2023",
+    "table": "bmx"
+   },
+   "releases": [
+    "2021-2023"
+   ],
+   "n_in_scope": 22,
+   "rule_versions": {},
+   "notes": [],
+   "count": 22,
+   "files": [
+    {
+     "path": "shards/table/2021-2023-bmx.jsonl",
+     "form": "jsonl",
+     "variables": 22,
+     "tokens": 4668
+    },
+    {
+     "path": "shards/table/2021-2023-bmx.txt",
+     "form": "txt",
+     "variables": 22,
+     "tokens": 616
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release 2021-2023, table ghb",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/2021-2023/ghb/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "2021-2023",
+    "table": "ghb"
+   },
+   "releases": [
+    "2021-2023"
+   ],
+   "n_in_scope": 3,
+   "rule_versions": {},
+   "notes": [],
+   "count": 3,
+   "files": [
+    {
+     "path": "shards/table/2021-2023-ghb.jsonl",
+     "form": "jsonl",
+     "variables": 3,
+     "tokens": 693
+    },
+    {
+     "path": "shards/table/2021-2023-ghb.txt",
+     "form": "txt",
+     "variables": 3,
+     "tokens": 186
+    }
+   ]
+  },
+  {
+   "kind": "scale",
+   "title": "Scale signature: yes_no",
+   "basis": "variables with this scale signature in the current release (2015-2016, 2017-2020, 2021-2023)",
+   "full_records": [
+    "metadata/releases/2015-2016/demo/variables.jsonl",
+    "metadata/releases/2017-2020/demo/variables.jsonl",
+    "metadata/releases/2021-2023/demo/variables.jsonl"
+   ],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": [
+     "2015-2016",
+     "2017-2020",
+     "2021-2023"
+    ],
+    "derived": {
+     "scale_signature": "yes_no"
+    }
+   },
+   "releases": [
+    "2015-2016",
+    "2017-2020",
+    "2021-2023"
+   ],
+   "n_in_scope": 213,
+   "rule_versions": {
+    "scale_signature_from_valid_labels": "0.2"
+   },
+   "notes": [],
+   "count": 15,
+   "files": [
+    {
+     "path": "shards/scale/yes-no.jsonl",
+     "form": "jsonl",
+     "variables": 15,
+     "tokens": 4128
+    },
+    {
+     "path": "shards/scale/yes-no.txt",
+     "form": "txt",
+     "variables": 15,
+     "tokens": 824
+    }
+   ]
+  }
+ ],
+ "across_releases": [
+  {
+   "path": "variables.txt",
+   "variables": 213,
+   "tokens": 6892
+  }
+ ]
+}

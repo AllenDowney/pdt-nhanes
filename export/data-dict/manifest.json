@@ -1,0 +1,44 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "533a6f3387dee360e7b60bc446b3981870e8336fad799dcc9a14134a1677394a",
+ "dataset": "nhanes",
+ "spec": "0.1.0",
+ "files": [
+  "2015-2016.yaml",
+  "2017-2020.yaml",
+  "2021-2023.yaml",
+  "LOSSES.md"
+ ],
+ "losses": {
+  "2015-2016": {
+   "release_version": 1,
+   "variables": 86,
+   "untyped": 4,
+   "availability": 85,
+   "provenance_fields": 344,
+   "numeric_code_labels": 62,
+   "missing_codes": 130,
+   "derived": 15
+  },
+  "2017-2020": {
+   "release_version": 1,
+   "variables": 64,
+   "untyped": 4,
+   "availability": 63,
+   "provenance_fields": 256,
+   "numeric_code_labels": 44,
+   "missing_codes": 88,
+   "derived": 15
+  },
+  "2021-2023": {
+   "release_version": 1,
+   "variables": 63,
+   "untyped": 4,
+   "availability": 62,
+   "provenance_fields": 252,
+   "numeric_code_labels": 44,
+   "missing_codes": 89,
+   "derived": 15
+  }
+ }
+}
