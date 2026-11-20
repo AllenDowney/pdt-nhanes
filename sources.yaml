@@ -10,7 +10,7 @@ sources:
   path: data/raw/DEMO_I.htm
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 172117
@@ -23,7 +23,7 @@ sources:
   path: data/raw/DEMO_I.xpt
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 3756480
@@ -36,7 +36,7 @@ sources:
   path: data/raw/DPQ_I.htm
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 42861
@@ -49,7 +49,7 @@ sources:
   path: data/raw/DPQ_I.xpt
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 507040
@@ -62,7 +62,7 @@ sources:
   path: data/raw/BMX_I.htm
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 67003
@@ -75,7 +75,7 @@ sources:
   path: data/raw/BMX_I.xpt
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 1989600
@@ -88,7 +88,7 @@ sources:
   path: data/raw/GHB_I.htm
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 13064
@@ -101,7 +101,7 @@ sources:
   path: data/raw/GHB_I.xpt
   releases:
   - 2015-2016
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 108960
@@ -115,7 +115,7 @@ sources:
   path: data/raw/P_DEMO.htm
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 89096
@@ -128,7 +128,7 @@ sources:
   path: data/raw/P_DEMO.xpt
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 3614720
@@ -141,7 +141,7 @@ sources:
   path: data/raw/P_DPQ.htm
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 44395
@@ -154,7 +154,7 @@ sources:
   path: data/raw/P_DPQ.xpt
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 791280
@@ -167,7 +167,7 @@ sources:
   path: data/raw/P_BMX.htm
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 55369
@@ -180,7 +180,7 @@ sources:
   path: data/raw/P_BMX.xpt
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 2520640
@@ -193,7 +193,7 @@ sources:
   path: data/raw/P_GHB.htm
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 15947
@@ -206,7 +206,7 @@ sources:
   path: data/raw/P_GHB.xpt
   releases:
   - 2017-2020
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 167600
@@ -220,7 +220,7 @@ sources:
   path: data/raw/DEMO_L.htm
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 88008
@@ -233,7 +233,7 @@ sources:
   path: data/raw/DEMO_L.xpt
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 2582160
@@ -246,7 +246,7 @@ sources:
   path: data/raw/DPQ_L.htm
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 42046
@@ -259,7 +259,7 @@ sources:
   path: data/raw/DPQ_L.xpt
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 560000
@@ -272,7 +272,7 @@ sources:
   path: data/raw/BMX_L.htm
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 53617
@@ -285,7 +285,7 @@ sources:
   path: data/raw/BMX_L.xpt
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 1563200
@@ -298,7 +298,7 @@ sources:
   path: data/raw/GHB_L.htm
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 20158
@@ -311,7 +311,7 @@ sources:
   path: data/raw/GHB_L.xpt
   releases:
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: automated
   fetched_on: '2026-11-20'
   bytes: 174000
@@ -326,7 +326,7 @@ sources:
   - 2015-2016
   - 2017-2020
   - 2021-2023
-  redistribution: unknown
+  redistribution: ship
   acquisition: manual
   manual_steps: cdc.gov returns 403 to curl; open the URL in a browser (or a headless browser, which works) and
     save the page.
