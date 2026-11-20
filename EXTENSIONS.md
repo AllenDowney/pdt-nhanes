@@ -5,4 +5,4 @@ Every key under `extensions` in this repo's records, with a reason (STANDARD.md 
 | Key | What it holds | Source | Why it's an extension |
 |---|---|---|---|
 
-None yet. An extension that a second dataset also needs is a proposal for the standard.
+None. An extension that a second dataset also needs is a proposal for the standard.

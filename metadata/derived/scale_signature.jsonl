@@ -1,0 +1,15 @@
+{"target": {"release": "2015-2016", "table": "demo", "variable": "DMQMILIZ"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "DMQADFC"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "SIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "SIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "FIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "FIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "MIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2015-2016", "table": "demo", "variable": "MIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "SIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "SIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "FIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "FIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "MIAPROXY"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2017-2020", "table": "demo", "variable": "MIAINTRP"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}
+{"target": {"release": "2021-2023", "table": "demo", "variable": "DMQMILIZ"}, "property": "scale_signature", "value": "yes_no", "rule": "scale_signature_from_valid_labels", "rule_version": "0.2"}

@@ -1,9 +1,13 @@
-# The variables to build, and facts the sources don't give (origin: hand).
-# Edited by hand; read by build/build_records.py.
-release: "2021-2023"
-# Start with 30-50 variables that include the hard cases: a battery, an item
-# asked on only some forms, several wordings, several kinds of missing codes,
-# and anything the publisher has corrected (instructions/03-parse-documentation.md).
-variables: {}
-#  name:
-#    measure: categorical   # categorical, ordinal, continuous, count, identifier, weight, text, date
+# The cycles and files to build. Edited by hand; read by build/build_records.py.
+# Chosen by Claude (PublicDataToolkit Task 61), 2026-11-20: three cycles, and in each the
+# demographics file, a questionnaire (the PHQ-9 depression screener), an examination file
+# (body measures) and a laboratory file (glycohemoglobin), each taken whole.
+author: "Claude (PublicDataToolkit Task 61)"
+date: "2026-11-20"
+releases:
+  "2015-2016":
+    files: {demo: DEMO_I, dpq: DPQ_I, bmx: BMX_I, ghb: GHB_I}
+  "2017-2020":
+    files: {demo: P_DEMO, dpq: P_DPQ, bmx: P_BMX, ghb: P_GHB}
+  "2021-2023":
+    files: {demo: DEMO_L, dpq: DPQ_L, bmx: BMX_L, ghb: GHB_L}

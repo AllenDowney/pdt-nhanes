@@ -2,7 +2,7 @@
 
 Metadata for the [National Health and Nutrition Examination Survey (NHANES)](https://wwwn.cdc.gov/nchs/nhanes/), built to the [PublicDataToolkit](https://github.com/AllenDowney/PublicDataToolkit) standard.
 
-**Status:** started from the PublicDataToolkit template; no records yet.
+**Status:** three cycles (2015-2016, 2017-March 2020 pre-pandemic, August 2021-August 2023), each with four files taken whole and linked on SEQN: demographics, the PHQ-9 depression screener, body measures and glycohemoglobin. The terms aren't decided yet, so nothing here may ship.
 
 <!-- The sections below are required, in this order (STANDARD.md §2.3; pdt check C11). Replace each placeholder. -->
 
@@ -16,7 +16,7 @@ The terms are at https://www.cdc.gov/nchs/policy/data-user-agreement.html. They 
 
 ## How to get the data
 
-The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum.
+The files are listed in [`sources.yaml`](sources.yaml), with where to get each and its checksum: NCHS posts each file's data (`.xpt`, SAS transport) and its codebook (`.htm`) at wwwn.cdc.gov without registration. `make download ARGS=--accept-terms` fetches them; the NCHS agreement page has to be saved from a browser.
 
 ## How to use the metadata
 

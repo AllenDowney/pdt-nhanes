@@ -3,30 +3,228 @@
 standard_version: "0.1"
 id: nhanes
 title: "National Health and Nutrition Examination Survey (NHANES)"
+kind: survey
 publisher:
   name: "National Center for Health Statistics (NCHS), CDC"
   url: "https://www.cdc.gov/nchs/"
 url: "https://wwwn.cdc.gov/nchs/nhanes/"
 description: "NCHS\u0027s survey of the health and nutrition of the US civilian noninstitutionalized population, combining interviews with physical examinations and laboratory tests at mobile examination centers. Released in two-year cycles of linked files."
 citation: "Centers for Disease Control and Prevention (CDC). National Center for Health Statistics (NCHS). National Health and Nutrition Examination Survey Data. Hyattsville, MD: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention."
-# Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
-# Quote what the terms pages say in `summary`, then have a person set each field
-# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
-# shipping anything that depends on it.
+# Terms are decided by a person, never by an agent (STANDARD.md §8). Recorded by Claude
+# (PublicDataToolkit Task 61), 2026-11-20; `unknown` until Allen decides.
 terms:
-  url: "https://www.cdc.gov/nchs/policy/data-user-agreement.html"
-  summary: Not yet reviewed.
+  url: https://www.cdc.gov/nchs/policy/data-user-agreement.html
+  summary: 'Not yet decided. What NCHS says (Data User Agreement, saved as nchs-data-user-agreement, dated September
+    17, 2024): "National Center for Health Statistics (NCHS) offers survey data files for public-use, with some
+    restrictions." "These confidentiality laws state the data collected by NCHS may be used only for statistical
+    reporting and analysis." Users will "Use the data in this dataset for statistical reporting and analysis only",
+    "Make no attempt to learn the identity of any person or establishment included in these data", "Not link this
+    dataset with individually identifiable data from other NCHS or non-NCHS datasets", and "Not engage in any efforts
+    to assess disclosure methodologies ... or any research on methods of re-identification". "By using these data
+    you signify your agreement to comply with the above-stated statutorily based requirements." The agreement says
+    nothing about redistributing the files, and NCHS posts them at wwwn.cdc.gov without registration. This is the
+    agreement Allen decided for pdt-nhis and pdt-nsfg.'
   data: unknown
   documentation: unknown
   metadata: unknown
   llm_processing: unknown
 dimensions:
   wave:
-    label: "cycle"
+    label: cycle
+    note: 'One wave per release: a two-year cycle, or the 2017-March 2020 pre-pandemic combination.'
+design:
+  weights:
+  - WTINT2YR
+  - WTMEC2YR
+  strata: SDMVSTRA
+  psu: SDMVPSU
+  note: Interview and examination weights; each release names its own.
 releases:
-  - id: "2021-2023"
-    label: "NHANES August 2021-August 2023"
-    status: current
-    sources: [nhanes-2021-2023-demo]
-    # A release with several data files lists `tables`, each with an id, label,
-    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.
+- id: 2015-2016
+  label: NHANES 2015-2016
+  status: current
+  design:
+    weights:
+    - WTINT2YR
+    - WTMEC2YR
+    strata: SDMVSTRA
+    psu: SDMVPSU
+    note: The interview and examination weights, in the demographics file.  The glycohemoglobin file is an examination
+      component, so it uses the examination weight.
+  sources:
+  - nhanes-2015-2016-demo-codebook
+  - nhanes-2015-2016-demo-data
+  - nhanes-2015-2016-dpq-codebook
+  - nhanes-2015-2016-dpq-data
+  - nhanes-2015-2016-bmx-codebook
+  - nhanes-2015-2016-bmx-data
+  - nhanes-2015-2016-ghb-codebook
+  - nhanes-2015-2016-ghb-data
+  - nchs-data-user-agreement
+  tables:
+  - id: demo
+    label: Demographic variables and sample weights
+    sources:
+    - nhanes-2015-2016-demo-codebook
+    - nhanes-2015-2016-demo-data
+    key:
+    - SEQN
+  - id: dpq
+    label: Mental health - depression screener (PHQ-9)
+    sources:
+    - nhanes-2015-2016-dpq-codebook
+    - nhanes-2015-2016-dpq-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: bmx
+    label: Body measures (examination)
+    sources:
+    - nhanes-2015-2016-bmx-codebook
+    - nhanes-2015-2016-bmx-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: ghb
+    label: Glycohemoglobin (laboratory)
+    sources:
+    - nhanes-2015-2016-ghb-codebook
+    - nhanes-2015-2016-ghb-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+- id: 2017-2020
+  label: NHANES 2017-March 2020 pre-pandemic
+  status: current
+  design:
+    weights:
+    - WTINTPRP
+    - WTMECPRP
+    strata: SDMVSTRA
+    psu: SDMVPSU
+    note: 'The interview and examination weights, in the demographics file. NCHS: the 2017-March 2020 file combines
+      2017-2018 with the 2019-March 2020 data collected before the pandemic halted field work, with special weights;
+      they are not for 2019-2020 alone. The glycohemoglobin file is an examination component, so it uses the examination
+      weight.'
+  sources:
+  - nhanes-2017-2020-demo-codebook
+  - nhanes-2017-2020-demo-data
+  - nhanes-2017-2020-dpq-codebook
+  - nhanes-2017-2020-dpq-data
+  - nhanes-2017-2020-bmx-codebook
+  - nhanes-2017-2020-bmx-data
+  - nhanes-2017-2020-ghb-codebook
+  - nhanes-2017-2020-ghb-data
+  - nchs-data-user-agreement
+  tables:
+  - id: demo
+    label: Demographic variables and sample weights
+    sources:
+    - nhanes-2017-2020-demo-codebook
+    - nhanes-2017-2020-demo-data
+    key:
+    - SEQN
+  - id: dpq
+    label: Mental health - depression screener (PHQ-9)
+    sources:
+    - nhanes-2017-2020-dpq-codebook
+    - nhanes-2017-2020-dpq-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: bmx
+    label: Body measures (examination)
+    sources:
+    - nhanes-2017-2020-bmx-codebook
+    - nhanes-2017-2020-bmx-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: ghb
+    label: Glycohemoglobin (laboratory)
+    sources:
+    - nhanes-2017-2020-ghb-codebook
+    - nhanes-2017-2020-ghb-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+- id: 2021-2023
+  label: NHANES August 2021-August 2023
+  status: current
+  design:
+    weights:
+    - WTINT2YR
+    - WTMEC2YR
+    strata: SDMVSTRA
+    psu: SDMVPSU
+    note: The interview and examination weights, in the demographics file.  The glycohemoglobin file is an examination
+      component, so it uses the examination weight.
+  sources:
+  - nhanes-2021-2023-demo-codebook
+  - nhanes-2021-2023-demo-data
+  - nhanes-2021-2023-dpq-codebook
+  - nhanes-2021-2023-dpq-data
+  - nhanes-2021-2023-bmx-codebook
+  - nhanes-2021-2023-bmx-data
+  - nhanes-2021-2023-ghb-codebook
+  - nhanes-2021-2023-ghb-data
+  - nchs-data-user-agreement
+  tables:
+  - id: demo
+    label: Demographic variables and sample weights
+    sources:
+    - nhanes-2021-2023-demo-codebook
+    - nhanes-2021-2023-demo-data
+    key:
+    - SEQN
+  - id: dpq
+    label: Mental health - depression screener (PHQ-9)
+    sources:
+    - nhanes-2021-2023-dpq-codebook
+    - nhanes-2021-2023-dpq-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: bmx
+    label: Body measures (examination)
+    sources:
+    - nhanes-2021-2023-bmx-codebook
+    - nhanes-2021-2023-bmx-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
+  - id: ghb
+    label: Glycohemoglobin (laboratory)
+    sources:
+    - nhanes-2021-2023-ghb-codebook
+    - nhanes-2021-2023-ghb-data
+    key:
+    - SEQN
+    references:
+    - columns:
+      - SEQN
+      table: demo
